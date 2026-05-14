@@ -1,16 +1,71 @@
-# React + Vite
+# React Sosyal Medya Uygulaması Projesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React kütüphanesini kullanarak oluşturulmuş, modern arayüze sahip bir sosyal medya uygulaması örneğidir. Proje, kullanıcıların içerik görüntülemesine ve paylaşımlar yapmasına olanak tanır.
 
-Currently, two official plugins are available:
+## 🚀 Proje Özellikleri
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🎨 Tasarım ve Arayüz
+*   **Modern UI:** Tailwind CSS kullanılarak tasarlanmış şık ve kullanıcı dostu bir arayüz.
+*   **Responsive Design:** Mobil ve masaüstü cihazlarda sorunsuz kullanım.
+*   **Karanlık Mod:** Göz yormayan karanlık tema desteği (tema değiştirme butonu).
 
-## React Compiler
+### 📂 Sayfa Yapısı
+Proje içerisinde üç ana sayfa bulunmaktadır:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  **Ana Sayfa**:
+    *   Uygulamanın ana navigasyon merkezi.
+    *   Kullanıcıya özel hoş geldin mesajı.
+    *   Sayaç özelliği ile basit state yönetimi pratiği.
 
-## Expanding the ESLint configuration
+2.  **Gönderiler**:
+    *   Kullanıcıların oluşturduğu gönderilerin listelendiği bölüm.
+    *   Beğeni ve yorum ekleme fonksiyonları.
+    *   Gönderi silme özelliği.
+    *   **Gerçekçi Veri Mock'u:** Mockaroo ile oluşturulmuş geniş gönderi veritabanı.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3.  **Profil**:
+    *   Kullanıcı profili görüntüleme alanı.
+    *   Kullanıcının yaptığı paylaşımlar.
+    *   Profil bilgisi düzenleme formu.
+
+### 🔗 Core Özellikler
+*   **Statik Veri Kullanımı:** Proje, ek bir backend servisine ihtiyaç duymadan tamamen statik veri (JSON) ile çalışır.
+*   **React Hooks:** `useState` ve `useEffect` gibi hook'lar aktif olarak kullanılır.
+*   **Component Mimarisi:** Uygulama, yeniden kullanılabilir bileşenlerden oluşur.
+
+## 🛠️ Kurulum ve Çalıştırma
+
+### Ön Gereksinimler
+*   Node.js 
+*   npm (Node Package Manager)
+
+
+1.  **Gerekli Paketler:**
+    ```bash
+    npm install
+    ```
+
+2.  **Uygulamayı Başlatma:**
+    ```bash
+    npm run dev
+    ```
+
+3.  **Tarayıcıda Açma:**
+    Uygulama otomatik olarak `http://localhost:5173` adresinde açılacaktır.
+
+## 📂 Dosya Yapısı
+
+```
+react-sosyal-medya-uygulamasi/
+├── public/                     # Statik dosyalar (HTML, ikonlar)
+├── src/
+│   ├── assets/                 # Görsel dosyalar (logo, hero görseli)
+│   ├── components/             # Tekrar kullanılabilir bileşenler
+│   ├── pages/                  # Ana sayfalar (AnaSayfa, Gonderiler, Profil)
+│   ├── App.jsx                 # Ana uygulama bileşeni ve yönlendirme (Routing)
+│   ├── index.css               # Genel CSS stilleri
+│   └── main.jsx                # Uygulamanın giriş noktası
+└── vite.config.js              # Vite yapılandırması
+```
+
+
